@@ -31,8 +31,8 @@ jobs:
           else
             echo "Nope!"; exit 1
           fi
-    approve:
-      type: approval
+  approve:
+    type: approval
         
 workflows:
   version: 2
