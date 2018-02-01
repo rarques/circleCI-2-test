@@ -33,6 +33,7 @@ jobs:
           fi
   approve:
     type: approval
+    steps:
         
 workflows:
   version: 2
