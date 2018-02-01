@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+      - sleep 10
         
   job-two:
     docker:
@@ -13,6 +14,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello from build 2"
+      - sleep 15
         
 workflows:
   version: 2
