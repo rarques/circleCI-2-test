@@ -34,6 +34,7 @@ jobs:
   approve:
     type: approval
     steps:
+      - checkout
         
 workflows:
   version: 2
