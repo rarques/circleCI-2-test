@@ -39,4 +39,4 @@ workflows:
       - job-one # Name of the first job
       - job-two: # Name of the second job
           requires:
-            - one
+            - job-one
