@@ -31,12 +31,17 @@ jobs:
           else
             echo "Nope!"; exit 1
           fi
+    approve:
+      type: approval
         
 workflows:
   version: 2
-  one_and_two:
+  one_and_two_an_dapprove:
     jobs:
       - job-one # Name of the first job
       - job-two: # Name of the second job
           requires:
             - job-one
+      - approve:
+          requires:
+            - job-two
